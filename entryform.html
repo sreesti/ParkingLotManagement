@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+  <meta charset='utf-8'>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, shrink-to-fit=no">
+
+  <title>Parking lot</title>
+  <meta name="description" content="Parking Lot Entry">
+  <meta name="author" content="Sreesti & Rishab">
+
+  <!-- Bootstrap core CSS -->
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Nunito+Sans:700,900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.12.1/css/all.css" crossorigin="anonymous">
+
+</head>
+<body>
+    <!--popup add new car-->
+    <div class="main">
+        <input type="checkbox" id="show">
+         <label for="show" class="show-btn"><strong>ADD NEW CAR</strong></label> 
+
+        <div class="container">
+        <label for="show" class="close-btn fas fa-times" title="close"></label><br>
+        
+         <form  id="entryForm">
+         <div class="form-group" >
+          <label for="owner" id="owner_name"><strong>Owner's Name</strong>
+            <span class="required-field">*</span></label>
+         <input type="text" class="form-control" id="owner" placeholder="Enter Owner's Name">
+        </div>
+
+        <div class="form-group" >
+          <label for="licensePlate" id="license"><strong> License Number </strong>
+            <span class="required-field">*</span></label>
+          <input type="text" class="form-control" id="licensePlate" placeholder="Enter License Number">
+         
+      </div>
+
+        <div class="form-group" >
+            <label for="car" id="car_modal"><strong>Car Model</strong>
+              <span class="required-field">*</span></label>
+            <input type="text" class="form-control" id="car" placeholder="Enter Car Model">
+           
+        </div>
+
+
+        
+            <div class="form-group">
+                <label for="entryDate" id="entry_date"><strong>Entry Date</strong>
+                  <span class="required-field">*</span></label>
+                <input type="date" class="form-control" id="entryDate">
+               
+            </div>
+
+            <div class="form-group">
+                <label for="exitDate" id="exit_date"><strong>Exit Date</strong></label>
+                <input type="date" class="form-control" id="exitDate">
+            </div>
+
+<button type="submit" class="btn btn-primary center" id="btnOne">SUBMIT</button>
+    </form>
+</div>
+</div><br><br><br><br><br><br>
+
+
+<div class="searchbarDiv">
+<input type="text" class="searchbox" id="searchInput" placeholder="Search by owner,license no, car model, entry date, exit date...">
+</div>
+
+<div class="table-container mt-5 mb-5 w-75 mx-auto displayTable" >
+
+        <table class="table table-striped shadow " id="parkingTable">
+                <thead class="text-white" id="tableHead">
+
+                  <tr>
+                    <th scope="col">OWNER'S NAME</th>
+                    <th scope="col">LICENSE NUMBER</th>
+                    <th scope="col">CAR MODEL</th>
+                    <th scope="col">ENTRY DATE</th>
+                    <th scope="col">EXIT DATE</th>
+                    <th scope="col">Actions</th>
+                  </tr>
+
+                </thead>
+                <tbody id="tableBody">
+                 
+                </tbody>
+              </table>
+</div>
+
+<footer>
+  <p class="copyright-text">Copyright &copy; 2021 All Rights Reserved by 
+    <a href="mailto : sreesti99@gmail.com">Sreesti</a></p>
+</footer>
+  
+      <script src="form.js"></script>
+</body>
+</html>
